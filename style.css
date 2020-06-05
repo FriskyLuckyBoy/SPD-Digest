@@ -1,0 +1,113 @@
+* {
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	font-size: 25.4px;
+}
+
+body {
+	background-color: black;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.chess-table{
+	width: 24.55rem;
+	height: 24.55rem;
+	background-color: #18204c;
+	display: flex;
+	flex-direction: row;
+}
+
+.left-number, .right-number{	
+	width: 1.36rem;
+	padding-top: 2.1rem;
+	padding-bottom: 2.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.wraper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-letters, .bottom-letters{
+	height: 1.36rem;
+	padding-left: 1.14rem;
+	padding-right: 1.14rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.playground{
+	background-color: #dae9f2;
+	color: #000;
+}
+
+.white{
+	background-color: #dae9f2;
+}
+
+.black{
+	background-color: #6e99c0;
+}
+
+.white, .black {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.27rem;
+	height: 2.27rem;
+	padding: .23rem;
+	font-size: 2.73rem;
+}
+
+.row-field {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.square-position{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 1.36rem;
+	height: 1.36rem;
+	transform: translateY(21.1rem);
+}
+.square-in {
+	width: 50%;
+	height: 50%;
+	background-color: #fff;
+}
+
+@media screen and (orientation: landscape) {
+	html {
+		font-size: 4.06vh;
+	}
+}
+@media screen and (orientation: portrait) { 
+	html {
+		font-size: 4.1vw;
+	}
+}
